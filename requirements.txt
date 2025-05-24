@@ -1,0 +1,32 @@
+# EC2에서 실행
+cd /home/ubuntu
+
+# 파일 열기
+nano requirements.txt
+
+# → 아래 내용으로 교체 후 저장
+
+# FastAPI 서버
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+
+# 데이터 처리
+pandas==2.2.2
+numpy==2.0.2
+scikit-learn==1.6.1
+
+# TensorFlow LSTM 추론용
+tensorflow-cpu==2.18.0
+keras==3.8.0
+
+# PyTorch PPO 추론용
+torch==2.6.0+cpu
+stable-baselines3==2.6.0
+gym==0.25.2
+
+# Swagger 및 기타
+python-multipart==0.0.9
+typing-extensions==4.13.2
+
+# PyTorch CPU 버전 전용 index
+-f https://download.pytorch.org/whl/cpu
